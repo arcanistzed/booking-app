@@ -2,6 +2,7 @@
   "name": "booking-app",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "next build && next export -o dist",
     "build:web": "next build",
@@ -34,6 +35,7 @@
   "devDependencies": {
     "@tauri-apps/cli": "^2.0.0-alpha.0",
     "@types/node": "^18.0.0",
+    "@types/prettier": "^2.7.1",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
