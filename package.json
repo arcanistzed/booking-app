@@ -2,7 +2,6 @@
   "name": "booking-app",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "build": "next build && next export -o dist",
     "build:web": "next build",

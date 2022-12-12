@@ -1,8 +1,7 @@
-import type { TailwindConfig } from "prettier";
-import prettier_plugin_tailwindcss from "prettier-plugin-tailwindcss";
-
-const config: TailwindConfig = {
-	plugins: [prettier_plugin_tailwindcss],
+// @ts-check
+/** @type {import("prettier").Config} */
+module.exports = {
+	plugins: [require.resolve("prettier-plugin-tailwindcss")],
 	tailwindcss: {
 		config: "./tailwind.config.cjs",
 		format: "auto",
@@ -17,4 +16,3 @@ const config: TailwindConfig = {
 	endOfLine: "lf",
 	printWidth: 120,
 };
-export default config;
