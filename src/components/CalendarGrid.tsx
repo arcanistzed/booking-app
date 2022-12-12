@@ -1,6 +1,6 @@
-import { trpc } from "../utils/trpc";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMemo, useState } from "react";
+import { trpc } from "../utils/trpc";
 
 export function CalendarGrid({ onSelect }: { onSelect: (date: Date) => void }) {
 	const { data: disabled = [] } = trpc.booking.getDisabled.useQuery();
@@ -78,7 +78,9 @@ function DayColumn({
 	const isToday = useMemo(() => {
 		const today = new Date();
 		return (
-			today.getDate() === day && today.getMonth() === date.getMonth() && today.getFullYear() === date.getFullYear()
+			today.getDate() === day &&
+			today.getMonth() === date.getMonth() &&
+			today.getFullYear() === date.getFullYear()
 		);
 	}, [date, day]);
 
@@ -145,7 +147,9 @@ function TimeSlot({
 			{isSlot ? (
 				<FontAwesomeIcon icon={["fas", "check"]} className="text-4xl text-cyan-100" />
 			) : (
-				[...Array(2)].map((_, i) => <div key={i}>{time + i > 12 ? `${time + i - 12} PM` : `${time + i} AM`}</div>)
+				[...Array(2)].map((_, i) => (
+					<div key={i}>{time + i > 12 ? `${time + i - 12} PM` : `${time + i} AM`}</div>
+				))
 			)}
 		</div>
 	);

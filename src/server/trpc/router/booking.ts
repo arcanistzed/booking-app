@@ -21,7 +21,7 @@ const holidays = [
 	"2023-12-26",
 ].map(date => new Date(date));
 
-import { router, publicProcedure } from "../trpc";
+import { publicProcedure, router } from "../trpc";
 
 export const bookingRouter = router({
 	hello: publicProcedure.input(z.object({ text: z.string().nullish() }).nullish()).query(({ input }) => {

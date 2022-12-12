@@ -36,7 +36,7 @@ export function DetailsForm({
 						name.current?.value ?? "",
 						email.current?.value ?? "",
 						phone.current?.value ?? "",
-						message.current?.value,
+						message.current?.value
 					);
 				}}
 			>

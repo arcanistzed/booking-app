@@ -6,15 +6,13 @@ import { trpc } from "../utils/trpc";
 
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import "../styles/globals.css";
 import {
-	faCheck,
-	faTimes,
-	faAngleLeft,
-	faAngleRight,
 	faAngleDoubleLeft,
-	faAngleDoubleRight,
+	faAngleDoubleRight, faAngleLeft,
+	faAngleRight, faCheck,
+	faTimes
 } from "@fortawesome/free-solid-svg-icons";
+import "../styles/globals.css";
 config.autoAddCss = false;
 
 // Add font awesome icons

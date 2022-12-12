@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { DetailsForm } from "./DetailsForm";
-import { ConfirmForm } from "./ConfirmForm";
 import { CalendarGrid } from "./CalendarGrid";
+import { ConfirmForm } from "./ConfirmForm";
+import { DetailsForm } from "./DetailsForm";
 
 enum BookingStep {
 	DATE,
