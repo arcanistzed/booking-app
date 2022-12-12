@@ -10,6 +10,9 @@ enum BookingStep {
 	CONFIRM,
 }
 
+/**
+ * The main booking component. This component manages the state of the booking
+ */
 export default function Booking() {
 	const [booking, setBooking] = useState<Date | null>(null);
 
