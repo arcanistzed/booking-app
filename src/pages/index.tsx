@@ -1,7 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Booking from "../components/Booking";
-import Navbar from "../components/Navbar";
+import Booking from "./components/Booking";
+import Navbar from "./components/Navbar";
 
 const Home: NextPage = () => {
 	return (
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="min-h-screen bg-gradient-to-b from-teal-200 to-sky-700">
+			<main className="min-h-screen bg-gradient-to-b from-tertiary-900 to-secondary-900">
 				<Navbar />
 				<Booking />
 			</main>
